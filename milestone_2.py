@@ -1,10 +1,10 @@
 import random
 # milestone_2.py
 
-# Step 1: Create a list containing the names of your 5 favorite fruits.
+# Step 1: list containing names of 5 favorite fruits.
 favorite_fruits = ["Apple", "Banana", "Orange", "Strawberry", "Mango"]
 
-# Step 2: Assign this list to a variable called word_list.
+# Step 2: Assigning list to variable called word_list.
 word_list = favorite_fruits
 
 word = random.choice(word_list)
@@ -18,6 +18,6 @@ else:
     
 
 
-# Step 3: Print out the newly created list to the standard output (screen).
+# Step 3: Print newly created list 
 print(word_list)
 print(word)
