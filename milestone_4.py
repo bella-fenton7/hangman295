@@ -19,13 +19,13 @@ class Hangman:
         if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
 
-            # Replace underscores in word_guessed and update num_letters
+            
             for i, letter in enumerate(self.word):
                 if letter == guess:
                     self.word_guessed[i] = guess
                     self.num_letters -= 1
 
-            # Additional logic: Check if the word is fully guessed
+            # Check if the word is fully guessed
             if self.num_letters == 0:
                 print(f"Congratulations! You guessed the word: {''.join(self.word_guessed)}")
                 
@@ -35,7 +35,7 @@ class Hangman:
             print(f"Sorry, {guess} is not in the word.")
             print(f"You have {self.num_lives} lives left.")
 
-            # Additional logic: Check if the player ran out of lives
+            # Check if the player ran out of lives
             if self.num_lives == 0:
                 print(f"Game over! The word was: {self.word}")
                 
@@ -62,7 +62,7 @@ class Hangman:
 word_list = ['apple', 'banana', 'orange', 'grape']
 hangman_game = Hangman(word_list)
 
-# Call the ask_for_input method to test
+# ask_for_input method test
 hangman_game.ask_for_input()
 
 
